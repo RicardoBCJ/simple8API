@@ -24,6 +24,8 @@ default: &default
 development:
   <<: *default
   database: simple8api_development
+  username: RailsReact
+  password: m4roto84@7
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -58,6 +60,8 @@ development:
 test:
   <<: *default
   database: simple8api_test
+  username: RailsReact
+  password: m4roto84@7
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -82,5 +86,5 @@ test:
 production:
   <<: *default
   database: simple8api_production
-  username: simple8api
-  password: <%= ENV['SIMPLE8API_DATABASE_PASSWORD'] %>
+  username: RailsReact
+  password: m4roto84@7
