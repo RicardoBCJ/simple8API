@@ -5,3 +5,22 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+todo = Todo.create([
+    {
+        title: "need rice",
+        done: false,
+    },
+    {
+        title: "need pen",
+        done: false,
+    },
+    {
+        title: "need apple",
+        done: false,
+    },
+    {
+        title: "need to rest",
+        done: false,
+    },
+])
