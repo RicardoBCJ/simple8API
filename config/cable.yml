@@ -6,5 +6,5 @@ test:
 
 production:
   adapter: redis
-  url: redistogo-shallow-26994
+  url: redis://redistogo:8889485d8a232ec8d0e4953e510f6baa@pike.redistogo.com:9780/
   # channel_prefix: simple8api_production
