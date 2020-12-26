@@ -6,11 +6,11 @@ Rails.application.routes.draw do
     resources :conversations, only: [:index, :create, :show, :update]
     resources :messages, only: [:create, :index, :show]
     resources :pictures, only: [:create, :index, :show, :upadate]
-    mount ActionCable.server => '/cable'
   end
   post '/api/login', to: "session#login"
   post '/api/signup', to: "users#create"
-  get '/api/auto-login', to: "session#auto_login"    
+  get '/api/auto-login', to: "session#auto_login"  
+  mount ActionCable.server => '/cable'  
 
   get '*path', to: "application#fallback_index_html", constraints: ->(request) do
     !request.xhr? && request.format.html?
